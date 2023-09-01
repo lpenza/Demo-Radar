@@ -89,7 +89,7 @@ function RadarComponent({ sections,targets, onClick, config }) {
     // Dibujar líneas desde el centro hasta el radio especificado
     lineAngles.forEach((angle) => {
       const x2 = Math.cos(angle) * radius;
-      const y2 = Math.sin(angle) * -radius;
+      const y2 = Math.sin(angle) * -radius+1.5;
 
       svg
         .append("line")
