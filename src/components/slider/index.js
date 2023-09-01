@@ -36,7 +36,7 @@ export default function MinimumDistanceSlider({
   }, [selectedRow]);
 
   const handleChange1 = (event, newValue) => {
-    console.log("change1", updatedSection);
+    
     setValue1(newValue);
     const newSection = {
       ...updatedSection,
@@ -50,7 +50,6 @@ export default function MinimumDistanceSlider({
   };
 
   const handleChange2 = (event, newValue) => {
-    console.log("change2", updatedSection);
     setValue2(newValue);
     const newSection = {
       ...updatedSection,

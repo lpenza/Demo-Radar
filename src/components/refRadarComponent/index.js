@@ -89,7 +89,7 @@ function RadarComponent({ sections,targets, onClick, config }) {
     // Dibujar líneas desde el centro hasta el radio especificado
     lineAngles.forEach((angle) => {
       const x2 = Math.cos(angle) * radius;
-      const y2 = Math.sin(angle) * -radius+1.5;
+      const y2 = Math.sin(angle) * (-radius+1.5);
 
       svg
         .append("line")
@@ -118,7 +118,7 @@ function RadarComponent({ sections,targets, onClick, config }) {
       // Definir un generador de arco para las secciones
       const path = d3
         .arc()
-        .outerRadius((d) => d.data.outerRadius * radius)
+        .outerRadius((d) => d.data.outerRadius * (radius-3))
         .innerRadius((d) => d.data.innerRadius * radius)
         .startAngle((d) =>
           d.data.startAngle > d.data.endAngle

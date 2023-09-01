@@ -38,7 +38,6 @@ function App() {
   };
 
   useEffect(() => {
-    // console.log(newSection)
   }, [newSection]);
 
   return (
