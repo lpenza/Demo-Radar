@@ -1,5 +1,34 @@
 .App {
   text-align: center;
+  background-color: rgb(56, 56, 56);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+  background-color: rgb(63, 63, 63);
+  gap:5rem;
+  /* width: 100%; */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.tableContainer{
+background-color:rgba(0, 0, 0, 0.274);
+display: flex;
+flex-direction: column;
+gap: 2.5rem;
+justify-content: center;
+align-items: center;
+border-radius: 15px;
+padding: 0.5rem;
 }
 
 .App-logo {
